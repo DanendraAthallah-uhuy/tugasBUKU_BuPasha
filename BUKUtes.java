@@ -1,8 +1,27 @@
+import java.util.Scanner;
+
 public class BUKUtes {
     public static void main(String[] args) {
         
         //Construstor
-        BUKU nendra = new BUKU(99876,"Buku Solusi Kehidupan", "Danendra", 1945);
+        Scanner input = new Scanner(System.in);
+        System.out.println("Masukan Judul Buku:");
+        String judul = input.nextLine();
+        System.out.println("Masukan Nama Pengarang Buku:");
+        String pengarang = input.nextLine();
+        System.out.println("Masukan Id Buku:");
+        int id = input.nextInt();
+        System.out.println("Masukan Tahun terbit buku:");
+        int tahunterbit = input.nextInt();
+        //object
+        BUKU nendra = new BUKU(id, judul, pengarang, tahunterbit);
+        System.out.println("_________________________________________");
+        System.out.println("Judul Buku: "+nendra.judul);
+        System.out.println("Pengarang Buku: "+nendra.pengarang);
+        System.out.println("Id Buku: "+nendra.id);
+        System.out.println("Tahun terbit buku: "+nendra.tahunterbit);
+        
+        /*BUKU nendra = new BUKU(99876,"Buku Solusi Kehidupan", "Danendra", 1945);
         System.out.println(nendra.id);
         System.out.println(nendra.judul);
         System.out.println(nendra.pengarang);
@@ -35,7 +54,7 @@ public class BUKUtes {
         System.out.println(ne.judul);
         System.out.println(ne.pengarang);
         System.out.println(ne.tahunterbit);
-        System.out.println("=================");
+        System.out.println("=================");*/
 
 
 
